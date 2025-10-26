@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration </title>
+</head>
+<body>
+    <form>
+<marquee direction="up" scrollamount="2" behavior="alternate" height="50">
+  <marquee direction="right" scrollamount="10" behavior="alternate" width="100%">
+    <h1>Student Regristration Details</h1>
+  </marquee>
+</marquee>
+        <fieldset><legend>Personal Details</legend>
+            <table>
+                <tr><td><label>first_name</label></td><td> <input type="first_name" name="first_name" required placeholder="Ex:sathya" 
+        pattern="[a-zA-Z]{5,9}" size="15" maxlength="12"></td></tr>
+        <tr><td><label>last_name</label></td><td><input type="lastn_ame" name="last_name" required 
+        placeholder="Ex:reddy" pattern="[a-zA-Z]{2,9}" size="15"  maxlength="12"></td></tr>
+        <tr><td> <label>mobile</label></td><td> <input type="tel" placeholder="9121926633" name="mobile" size="15" maxlength="12"></td></tr>
+        <tr><td><label>email</label></td><td><input type="email" name="email"  required
+         placeholder="Ex:reddy@gmail.com" pattern="[a-z@]{1,10}" size="15" maxlength="12"></td></tr>
+         <tr><td><label>password</label></td><td> <input type="password" name="password"  required 
+        placeholder="Ex:...." size="15" maxlength="07"></td></tr>
+        <tr><td> <label>Date of Birth</label></td><td><input type="date"  name="dob" required size="25" ><br>
+        </td></tr>
+        <tr><td><label>Gender</label></td><td><input type="radio" name="Gender" value="M">Male<input type="radio" name="Gender" value="F">Female
+        <input type="radio" name="Gender" value="C">Custom</td></tr>
+        <tr><td> <label>Select Country</label></td><td><select>
+            <option value="INDIA">INDIA</option>
+            <option value="USA">USA</option>
+            <option value="CHINA">CHINA</option>
+        </select></td></tr>
+        <tr><td><label>upload picture</label></td><td><input type="file" name="pic"></td> </tr>
+            </table>
+        <input type="reset" >
+<!-- 
+        <label>Coures</label> -->
+        <label></label>
+        </fieldset>
+        <fieldset><legend>Education Details</legend>
+           
+            <label> Select Courses</label>
+            <select>
+                <option value="jfs">Java full stack </option>
+                <option value="pfs">python full stack </option>
+                <option value="jfs">Core Java</option>
+                <option value="Ps">PHP</option>
+            </select><br>
+            <label>Delivery Mode</label>
+            <input type="checkbox" name="Mode1" value="on">ONLINE
+            <input type="checkbox" name="Mode1" value="of">ONLINE<br>
+            <label>Comments</label><br>
+            <textarea rowspan="40" colspan="40"></textarea>
+
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>
